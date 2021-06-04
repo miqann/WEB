@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="userControlPage.js" async></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>MK Commerical Cleaning</h1>
+            </div>
+            <div class="bar">
+                <span><i class="fa fa-bars"></i></span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <h3>Homme</h3>
+                    </li>
+                    <li>
+                        <h3>Homme</h3>
+                    </li>
+                    <li>
+                        <h3>Homme</h3>
+                    </li>
+                    <li class="active">
+                        <h3>Homme</h3>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
+        <div class="nav-mobile">
+            <ul>
+                <li>
+                    <span><i class="fa fa-home"></i></span>
+                    <h3>Homme</h3>
+                </li>
+                <li>
+                    <span><i class="fa fa-home"></i></span>
+                    <h3>Homme</h3>
+                </li>
+                <li>
+                    <span><i class="fa fa-home"></i></span>
+                    <h3>Homme</h3>
+                </li>
+                <li class="active">
+                    <span><i class="fa fa-home"></i></span>
+                    <h3>Homme</h3>
+                </li>
+
+            </ul>
+        </div>
+        <div class="m-bar">
+            <span><i class="fa fa-ellipsis-v"></i></span>
+        </div>
+
+        <aside class="sidebar">
+            <h1>side bar <span class="close-sidebar"><i class="fa fa-times"></i></span></h1>
+            <div class="user-side">
+                <div class="user-pic">
+                    <img src="img/Khoa.jpg" alt="" >
+                </div>
+                <div class="user-info">
+                    <span class="name"> MK </span>
+                    <span class="email">minhkhoa.aviation@gmail.com</span>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+            <div class="search">
+                <form action="">
+                    <div class="row">
+                        <input type="text" placeholder="Search contract...">
+                        <button type="submit"><span><i class="fa fa-search"></i></span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="side-nav">
+                <h2>General</h2>
+                <nav>
+                    <ul>
+                        <li class="active" onclick="show(0)">
+                            <span><i class="fas fa-file-signature"></i></span>
+                            <h3>Your Contract</h3>
+                        </li>
+                        <li class="side-info-control" onclick="show(1)">
+                            <span><i class="fas fa-info-circle"></i></span>
+                            <h3>Infomation</h3>
+                        </li>
+                        <li class="side-schedule-control" onclick="show(2)">
+                            <span><i class="far fa-calendar-alt"></i></span>
+                            <h3>Shedule</h3>
+                        </li>
+                        <li class="" onclick="show(3)">
+                            <span><i class="fa fa-cog"></i></span>
+                            <h3>Setting</h3>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bt-nav">
+                <ul>
+                    <li class="alert" title="alert">
+                        <span><i class="fas fa-bell"></i></span>
+                    </li>
+                    <li class="message" title="alert">
+                        <span><i class="fas fa-envelope"></i></span>
+                    </li>
+                    <li class="setting" title="alert">
+                        <span><i class="fas fa-cog"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main">
+            <section class="profile tab">
+                <h1>Contract</h1>
+                <div class="usercontract">
+                    <div class="post">
+                        <span><i class="fa fa-plus"></i></span>
+                    </div>
+                    <div class="post">
+                        <img src="img/Khoa.jpg" alt="" width="200px">
+                        <p>Tittle</p>
+                    </div>
+                    <div class="post">
+                        <img src="img/Khoa.jpg" alt="" width="200px">
+                        <p>Tittle</p>
+                    </div>
+                    <div class="post">
+                        <img src="img/Khoa.jpg" alt="" width="200px">
+                        <p>Tittle</p>
+                    </div>
+                    <div class="post">
+                        <img src="img/Khoa.jpg" alt="" width="200px">
+                        <p>Tittle</p>
+                    </div>
+                </div>
+
+
+            </section>
+            <section class="tab">
+                
+                <div class="wrapper">
+              
+                    <div class="right">
+                        <div class="info-data">
+                            <h1>INFO</h1>
+                            <div class="data">
+                                <h4>Name</h4>
+                                <p>Nguyen Dung Minh Khoa</p>
+                            </div>
+                            <div class="data">
+                                <h4>Email</h4>
+                                <p>minhkhoa.aviation@gmail.com</p>
+                            </div>
+                            <div class="data">
+                                <h4>Phone Number</h4>
+                                <p>0913883477</p>
+                            </div>
+                            <div class="data">
+                                <h4>Date of Birth</h4>
+                                <p>29/04/1999</p>
+                            </div>
+                            <div class="data">
+                                <h4>Gender</h4>
+                                <p>Male</p>
+                            </div>
+                            <div class="data">
+                                <h4>Address</h4>
+                                <p>Nguyen Xien Street, Apt S2.01, Vinhomes Grand Park, Long Thanh My Ward, D9, HCMC</p>
+                            </div>
+                            <button class="" onclick="show(4)">Update Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </section>
+            <section class="tab">
+                <h1>Shedule</h1>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab tempora illo molestiae amet, quasi
+                    repellendus mollitia eos aut, eius debitis nihil hic saepe. Reprehenderit libero alias tempora
+                    perspiciatis quod eligendi.
+                </p>
+            </section>
+            <section class="tab">
+                <h1>Setting</h1>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab tempora illo molestiae amet, quasi
+                    repellendus mollitia eos aut, eius debitis nihil hic saepe. Reprehenderit libero alias tempora
+                    perspiciatis quod eligendi.
+                </p>
+            </section>
+            <section class="tab">
+                
+                <div class="wrapper update">
+                    <div class="right">
+                        <div class="info-data">
+                            <h1>INFO</h1>
+                            <div class="data">
+                                <h4>Name</h4>
+                                <input type="text" value="Nguyen Dung Minh Khoa"> 
+                            </div>
+                            <div class="data">
+                                <h4>Email</h4>
+                                <input type="email" value="minhkhoa.aviation@gmail.com"> 
+                            </div>
+                            <div class="data">
+                                <h4>Phone Number</h4>
+                                <input type="number" value="0913883477"> 
+                            </div>
+                            <div class="data">
+                                <h4>Date of Birth</h4>
+                                <input type="date" value="29/04/1999"> 
+                            </div>
+                            <div class="data">
+                                <h4>Gender</h4>
+                                <input type="radio" id="male" name="male" value="male"> <label for="male">Male</label>
+                                <input type="radio" id="female" name="female" value="female"> <label for="female">Female</label>
+                                <input type="radio" id="other" name="other" value="other"> <label for="other">Other</label>
+                            </div>
+                            <div class="data">
+                                <h4>Address</h4>
+                                <input type="text" value="Nguyen Xien Street, Apt S2.01, Vinhomes Grand Park, Long Thanh My Ward, D9, HCMC"> 
+                                
+                            </div>
+                            <button class="" onclick="show(1)">Save</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </section>
+        </div>
+
+
+
+    </div>
+ 
+</body>
+
+</html>
