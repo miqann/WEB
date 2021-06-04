@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 300;
+    box-sizing: border-box;  
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid #fff;
+    margin: 15px 20px;
+}
+.navbar-logo img{
+    height: 70px;
+    padding-left: 30px;
+    
+}
+.page-scroll{
+    padding: 0 10px;
+    
+}
+.navbar-nav{
+    margin-top: -5px;
+    margin-left: auto!important;
+    padding: auto;
+    display: flex;
+    position: relative;
+    
+}
+
+.page-scroll a{
+    float: right;
+    text-align: left;
+    color:#555!important;
+    padding: 0 20px 5px;
+    text-decoration: none!important;
+    
+}
+
+.navbar{
+    background: #fff;
+    margin: 0;
+}
+.navbar-toggler{
+    border: none!important;
+}
+.nav-link{
+    color:#555!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+.active{
+    position: relative;
+    border-bottom: 2px solid #6EBC20;
+    transition: transform .5s;
+}
+.page-scroll:nth-child(1):hover ~ .active{
+    transform: translateX(0 );
+}
+.page-scroll:nth-child(2):hover ~ .active{
+    transform: translateX(10rem);
+}
+.page-scroll:nth-child(3):hover ~ .active{
+    transform: translateX(20rem);
+}
+.page-scroll:nth-child(4):hover ~ .active{
+    transform: translateX(30rem);
+}
+.page-scroll:nth-child(5):hover ~ .active{
+    transform: translateX(40rem);
+}
