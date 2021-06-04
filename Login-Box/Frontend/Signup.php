@@ -1,7 +1,6 @@
 <?php
-    include 'Backend/login.php';
+    include 'Backend/register.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,10 +17,10 @@
     <div class="loginbox-interface">
         <div class="loginbox-form-box">
             <div class="loginbox-button-box">
-                <div id="loginbox-button">
+                <div id="loginbox-button" style="left: 110px;">
                 </div>
                 <div class="loginbox-loginbutton">
-                    <button type="button" class="loginbox-toggle-btn" onclick="login()">LOGIN</button>
+                    <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='index.php'">LOGIN</button>
                 </div>
                 <div class="loginbox-signupbutton">
                     <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='Signup.php'">SIGN UP</button>
@@ -36,30 +35,19 @@
                 <img src="img/38-instagram-3-512.webp" alt="">
                 <img src="img/img_2220.png" alt="">
             </div>
-            <form action="Backend/login.php" method="POST" id="loginbox-login" class="loginbox-input-group-login">
-                <input class="loginbox-input-field" value="<?php echo $uname ?>" type="text" name="userId" id="" placeholder="User ID or Email"
-                    required>
-                <input class="loginbox-input-field" value="<?php echo $_POST['password']; ?>" type="password" name="password" id="" placeholder="Password"
-                    required>
-                <input type="checkbox" class="loginbox-check-box" id="remember-password"> <label for="remember-password"
-                    style="cursor: pointer;">Remember password</label>
-                <button name="submitLog" type="submit" class="loginbox-submit-btn">Login</button>
-                
-                <div class="reset-password">
-                    <a onclick="resetPassword()">
-                        Forgot your password?
-                    </a>
-                </div>
-            </form>
-
-
-            <form action="" method="post" id="loginbox-reset-password" class="loginbox-input-group-login">
-                <input class="loginbox-input-field" type="text" name="userId" id="" placeholder="Enter your email"
+            <form action="Backend/register.php" method="POST" id="loginbox-signup" class="loginbox-input-group-signup" style="left: 50px;">
+                <input class="loginbox-input-field" type="text" value="<?php echo $uname ?>" name="userId" id="loginbox-userId"
+                    placeholder="User ID " required>
+                <input class="loginbox-input-field" type="email" value="<?php echo $uemail ?>" name="email" id="loginbox-email" placeholder="Email"
                     required>
 
-                <input type="checkbox" class="loginbox-check-box" id="remember-password"> <label for="remember-password"
-                    style="cursor: pointer;">Remember password</label>
-                <button name="submitForgot" type="submit" class="loginbox-submit-btn">Reset password</button>
+                <input class="loginbox-input-field" type="password" value="<?php echo $_POST['password']; ?>" name="password" id="" placeholder="Password"
+                    required>
+                <input class="loginbox-input-field" type="password" value="<?php echo $_POST['cpassword']; ?>" name="cpassword" id=""
+                    placeholder="Enter your password again" required>
+                <input type="checkbox" class="loginbox-check-box"> <span>I agree to term & conditions</span>
+                <button name="submitSign" type="submit" class="loginbox-submit-btn">Sign Up</button>
+
             </form>
         </div>
 
@@ -68,11 +56,21 @@
 
     <script>
         var x = document.getElementById("loginbox-login");
+        var y = document.getElementById("loginbox-signup");
+        var z = document.getElementById("loginbox-button");
         var j = document.getElementById("loginbox-reset-password");
 
+        function signup() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+            j.style.left = "400px"
+        }
 
         function login() {
             x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
             j.style.left = "800px"
         }
         function resetPassword() {
