@@ -20,7 +20,7 @@
                     <button type="button" class="loginbox-toggle-btn" onclick="login()">LOGIN</button>
                 </div>
                 <div class="loginbox-signupbutton">
-                    <button type="button" class="loginbox-toggle-btn" onclick="signup()">SIGN UP</button>
+                    <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='Signup.html'">SIGN UP</button>
                 </div>
                 <!--
                     <button type="button" class="loginbox-toggle-btn" onclick="login()">LOGIN</button>
@@ -47,20 +47,6 @@
                 </div>
             </form>
 
-            <form action="" method="post" id="loginbox-signup" class="loginbox-input-group-signup">
-                <input class="loginbox-input-field" type="text" name="userId" id="loginbox-userId"
-                    placeholder="User ID " required>
-                <input class="loginbox-input-field" type="email" name="email" id="loginbox-email" placeholder="Email"
-                    required>
-
-                <input class="loginbox-input-field" type="password" name="password" id="" placeholder="Password"
-                    required>
-                <input class="loginbox-input-field" type="password" name="passwordRepeat" id=""
-                    placeholder="Enter your password again" required>
-                <input type="checkbox" class="loginbox-check-box"> <span>I agree to term & conditions</span>
-                <button name="submitSign" type="submit" class="loginbox-submit-btn">Sign Up</button>
-
-            </form>
 
             <form action="" method="post" id="loginbox-reset-password" class="loginbox-input-group-login">
                 <input class="loginbox-input-field" type="text" name="userId" id="" placeholder="Enter your email"
@@ -77,21 +63,11 @@
 
     <script>
         var x = document.getElementById("loginbox-login");
-        var y = document.getElementById("loginbox-signup");
-        var z = document.getElementById("loginbox-button");
         var j = document.getElementById("loginbox-reset-password");
 
-        function signup() {
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "110px";
-            j.style.left = "400px"
-        }
 
         function login() {
             x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0px";
             j.style.left = "800px"
         }
         function resetPassword() {
