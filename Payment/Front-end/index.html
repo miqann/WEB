@@ -41,8 +41,9 @@
                 </li>
             </ul>
 
-            <!--Creadit card form-->
+
             <div class="tab-content p-3">
+                <!--Creadit card form-->
                 <div class="tab-pane fade show active" id="nav-tab-card">
                     <form action="">
                         <div class="form-content payment-form  creadit-form" style="flex-direction: column;">
@@ -80,6 +81,8 @@
 
                 </div>
 
+                <!--Paypal form-->
+
                 <div class="tab-pane text-center" id="nav-tab-paypal">
                     <div class="paypal-tittle">
                         <div class="paypal-img">
@@ -96,42 +99,43 @@
                         </form>
                     </div>
                 </div>
-
+                <!--Banking form-->
                 <div class="tab-pane text-center" id="nav-tab-banking">
                     <div class="paypal-tittle">
                         <div class="paypal-img">
                             <img src="./1024px-PayPal_logo.png" alt="">
                         </div>
                         <p class="">Get select your bank</p>
-                    </div> 
-                        <form action="">
-                            <div class="form-content payment-form creadit-form banking-form" style="flex-direction: column;">
-                                <select name="" id="bank-name" >
-                                    <option value="">Your bank</option>
-                                    <option value="">Techcombank</option>
-                                    <option value="">TPBank</option>
-                                    <option value="">VPBank</option>
-                                </select>
-                                <div class="payment-detail">
-                                    <input type="text" required placeholder="User account">
-                                    <i class=" payment-icon fas fa-user"></i>
-                                </div>
-                                <div class="payment-detail" id="card-container">
-                                    <input type="text" required placeholder="password">
-                                    <i class=" payment-icon far fa-credit-card"></i>
-                                    <div id="logo"></div>
-                                </div>
-                                <div class="g-recaptcha" data-sitekey="6LcITR0bAAAAACdvjPCZmixn2Yybm2fv1uTo0zBo"></div>
-                                <br/>
-                           
-                                <div class="text-center">
-                                    <button type="button" class="btn btn-primary local-button">
-                                        Confirm
-                                    </button>
-                                </div>
+                    </div>
+                    <form action="">
+                        <div class="form-content payment-form creadit-form banking-form"
+                            style="flex-direction: column;">
+                            <select name="" id="bank-name">
+                                <option value="">Your bank</option>
+                                <option value="">Techcombank</option>
+                                <option value="">TPBank</option>
+                                <option value="">VPBank</option>
+                            </select>
+                            <div class="payment-detail">
+                                <input type="text" required placeholder="User account">
+                                <i class=" payment-icon fas fa-user"></i>
                             </div>
-    
-                        </form>
+                            <div class="payment-detail" id="card-container">
+                                <input type="text" required placeholder="password">
+                                <i class=" payment-icon far fa-credit-card"></i>
+                                <div id="logo"></div>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LcITR0bAAAAACdvjPCZmixn2Yybm2fv1uTo0zBo"></div>
+                            <br />
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary local-button">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
 
                 </div>
 
@@ -141,9 +145,9 @@
                             <img src="./1024px-PayPal_logo.png" alt="">
                         </div>
                     </div>
-                    
-                       
-    
+
+
+
                 </div>
 
             </div>
