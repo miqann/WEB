@@ -1,3 +1,13 @@
+<?php
+    include 'Backend/login.php';
+    
+    session_start();
+    error_reporting(0);
+
+    if (isset($_SESSION['userId'])) {
+        header("Location: welcome.php");}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +30,7 @@
                     <button type="button" class="loginbox-toggle-btn" onclick="login()">LOGIN</button>
                 </div>
                 <div class="loginbox-signupbutton">
-                    <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='Signup.html'">SIGN UP</button>
+                    <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='Signup.php'">SIGN UP</button>
                 </div>
                 <!--
                     <button type="button" class="loginbox-toggle-btn" onclick="login()">LOGIN</button>
@@ -32,14 +42,15 @@
                 <img src="img/38-instagram-3-512.webp" alt="">
                 <img src="img/img_2220.png" alt="">
             </div>
-            <form action="login.php" method="post" id="loginbox-login" class="loginbox-input-group-login">
-                <input class="loginbox-input-field" type="text" name="userId" id="" placeholder="User ID or Email"
+            <form action="Backend/login.php" method="POST" id="loginbox-login" class="loginbox-input-group-login">
+                <input class="loginbox-input-field" value="<?php echo $uname ?>" type="text" name="userId" id="" placeholder="User ID or Email"
                     required>
-                <input class="loginbox-input-field" type="password" name="password" id="" placeholder="Password"
+                <input class="loginbox-input-field" value="<?php echo $_POST['password']; ?>" type="password" name="password" id="" placeholder="Password"
                     required>
                 <input type="checkbox" class="loginbox-check-box" id="remember-password"> <label for="remember-password"
                     style="cursor: pointer;">Remember password</label>
                 <button name="submitLog" type="submit" class="loginbox-submit-btn">Login</button>
+                
                 <div class="reset-password">
                     <a onclick="resetPassword()">
                         Forgot your password?
