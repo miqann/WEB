@@ -1,17 +1,20 @@
 const tbtn = document.querySelectorAll(".side-nav ul li");
 const tabClicked = document.querySelectorAll(".tab");
 const navSideMobile = document.querySelector(".sidebar");
+const settingClicked = document.querySelector(".drop-box");
 function show(panelIndex) {
     tabClicked.forEach(function(node){
         node.style.display = "none";
     })
     tabClicked[panelIndex].style.display = "block";
-    navSideMobile.classList.remove("show")
+    navSideMobile.classList.remove("show");
+    /* Remove drop-box after clicked*/
+    settingClicked.classList.remove("visible");
 } 
 show(0);
 
 
-$(".side-nav ul li").click(function(){
+$(".side-nav .side-nav-list li").click(function(){
     $(this).addClass("active").siblings().removeClass("active")
 })
 
@@ -33,4 +36,8 @@ $(".side-nav ul li").click(function(){
         navSideMobile.classList.remove("show")
     })
 
-/*dadadadaddada */
+/*show setting*/
+function showSetting(){
+   
+    settingClicked.classList.toggle("visible")
+}

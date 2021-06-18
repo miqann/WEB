@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="userControlPage.js" async></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Commerical Cleaning</h1>
+            </div>
+            <div class="bar">
+                <span><i class="fa fa-bars"></i></span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <h3>Homme</h3>
+                    </li>
+                    <li>
+                        <h3>Homme</h3>
+                    </li>
+                    <li>
+                        <h3>Homme</h3>
+                    </li>
+                    <li class="active">
+                        <h3>Homme</h3>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
+        <div class="nav-mobile">
+            <ul>
+                <li>
+                    <span><i class="fa fa-home"></i></span>
+                    <h3>Homme</h3>
+                </li>
+                <li>
+                    <span><i class="fa fa-home"></i></span>
+                    <h3>Homme</h3>
+                </li>
+                <li>
+                    <span><i class="fa fa-home"></i></span>
+                    <h3>Homme</h3>
+                </li>
+                <li class="active">
+                    <span><i class="fa fa-home"></i></span>
+                    <h3>Homme</h3>
+                </li>
+
+            </ul>
+        </div>
+        <div class="m-bar">
+            <span><i class="fa fa-ellipsis-v"></i></span>
+        </div>
+
+        <aside class="sidebar">
+            <h1>side bar <span class="close-sidebar"><i class="fa fa-times"></i></span></h1>
+            <div class="user-side">
+                <div class="user-pic">
+                    <img src="../Front-end/img/Khoa.jpg" alt="">
+                </div>
+                <div class="user-info">
+                    <span class="name"> MK </span>
+                    <span class="email">minhkhoa.aviation@gmail.com</span>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+            <div class="search">
+                <form action="">
+                    <div class="row">
+                        <input type="text" placeholder="Search contract...">
+                        <button type="submit"><span><i class="fa fa-search"></i></span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="side-nav">
+                <h2>General</h2>
+                <nav>
+                    <ul class="side-nav-list">
+                        <li class="active" onclick="show(0)">
+                            <span><i class="fas fa-file-signature"></i></span>
+                            <h3>Your Contract</h3>
+                        </li>
+                        <li class="side-info-control" onclick="show(1)">
+                            <span><i class="fas fa-info-circle"></i></span>
+                            <h3>Infomation</h3>
+                        </li>
+                        <li class="side-schedule-control" onclick="show(2)">
+                            <span><i class="far fa-calendar-alt"></i></span>
+                            <h3>Shedule</h3>
+                        </li>
+                        <li class="" onclick="show()">
+                            <span><i class="far fa-credit-card"></i></span>
+                            <h3>Payment</h3>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="drop-box">
+                    <ul>
+                        <li>
+                            <i class="fas fa-user-circle">
+                                <a href="">Account</a>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="fas fa-user-circle">
+                                <a href="">Account</a>
+                            </i>
+                        </li>
+                        <li>
+                            <i class="fas fa-user-circle">
+                                <a href="">Account</a>
+                            </i>
+                        </li>
+                        <li onclick="show(4)">
+                            <i class="fas fa-key">
+                                <a  onclick="show(4)">Change password</a>
+                            </i>
+                        </li>
+                       
+        
+                    </ul>
+                </div>
+            </div>
+            <div class="bt-nav">
+                <ul>
+                    <li class="alert" title="alert">
+                        <span><i class="fas fa-bell"></i></span>
+                    </li>
+                    <li class="message" title="alert">
+                        <span><i class="fas fa-envelope"></i></span>
+                    </li>
+                    <li class="setting" title="alert" onclick="showSetting()">
+                        <span><i class="fas fa-cog"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main">
+
+            <section class="profile tab">
+                <div class="form-container">
+                    <h1>Contract</h1>
+                    <div class="usercontract">
+                        <div class="post">
+                            <span><i class="fa fa-plus"></i></span>
+                        </div>
+                        <div class="post">
+                            <img src="img/Khoa.jpg" alt="" width="200px">
+                            <p>Tittle</p>
+                        </div>
+                        <div class="post">
+                            <img src="img/Khoa.jpg" alt="" width="200px">
+                            <p>Tittle</p>
+                        </div>
+                        <div class="post">
+                            <img src="img/Khoa.jpg" alt="" width="200px">
+                            <p>Tittle</p>
+                        </div>
+                        <div class="post">
+                            <img src="img/Khoa.jpg" alt="" width="200px">
+                            <p>Tittle</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+            <section class="tab">
+
+
+                <div class="form-container">
+                    <div class="form-tittle">
+                        Information
+                    </div>
+                    <div class="form-content user-info-tab">
+                        <div class="info">
+                            <h3>Name</h3>
+                            <span> Nguyen Dung Minh Khoa</span>
+                        </div>
+                        <div class="info">
+                            <h3>Email</h3>
+                            <span>minhkhoa.aviation@gmail.com</span>
+                        </div>
+                        <div class="info">
+                            <h3>Phone number</h3>
+                            <span>0913883477</span>
+                        </div>
+                        <div class="info">
+                            <h3>Address</h3>
+                            <span></span>
+                        </div>
+                        <div class="info">
+                            <h3>Name</h3>
+                            <span> Nguyen Dung Minh Khoa</span>
+                        </div>
+                        <div class="info">
+                            <h3>Name</h3>
+                            <span> Nguyen Dung Minh Khoa</span>
+                        </div>
+                    </div>
+
+                    <div class="form-submit">
+                        <input value="Update" onclick="show(3)">
+                    </div>
+                    </form>
+
+                </div>
+
+
+            </section>
+            <section class="tab">
+                <h1>Shedule</h1>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab tempora illo molestiae
+                    amet, quasi
+                    repellendus mollitia eos aut, eius debitis nihil hic saepe. Reprehenderit libero alias tempora
+                    perspiciatis quod eligendi.
+                </p>
+            </section>
+
+<!--Update user info section--> 
+            <section class="tab">
+                <div class="form-container">
+                    <div class="form-tittle">
+                        Registration
+                    </div>
+                    <form action="">
+                        <div class="form-content">
+                            <div class="form-input">
+                                <span>Full name</span>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-input">
+                                <span>Email</span>
+                                <input type="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-input">
+                                <span>Phone</span>
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="form-input">
+                                <span>Date of birth</span>
+                                <input type="text" placeholder="mm/dd/yyyy" data-mask="00 / 00 / 0000" required>
+                            </div>
+                            <div class="form-input">
+                                <span>Address</span>
+                                <input type="text" placeholder="Enter your address" required>
+                            </div>
+                            <div class="form-input">
+                                <span>Full name</span>
+                                <input type="text" placeholder="Enter yout name" required>
+                            </div>
+                            <div class="checkbox">
+                                <span class="checkbox-tittle">Gender</span>
+                                <input type="radio" id="radio-1" name="value">
+                                <input type="radio" id="radio-2" name="value">
+                                <input type="radio" id="radio-3" name="value">
+                                <div class="option-list">
+
+                                    <label for="radio-1">
+                                        <span class="dot radio-1"></span>
+                                        <span class="value">Khoa </span>
+                                    </label>
+
+                                    <label for="radio-2">
+                                        <span class="dot radio-2"></span>
+                                        <span class="value">Khoa </span>
+                                    </label>
+
+
+                                    <label for="radio-3">
+                                        <span class="dot radio-3"></span>
+                                        <span>Khoa </span>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit">
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+
+<!--Change password section-->
+
+            <section class="tab">
+                <div class="form-container change-password-container">
+                    <div class="form-tittle">
+                        Change password
+                    </div>
+                    <form action="">
+                        <div class="form-content change-password-form">
+                            <div class="form-input">
+                                <span>Enter your current password</span>
+                                <input type="password" placeholder="Your current password" required>
+                            </div>
+                            <div class="form-input">
+                                <span>Enter your new password</span>
+                                <input type="password" placeholder="Your new password" required>
+                            </div>
+                            <div class="form-input">
+                                <span>Re enter your new password</span>
+                                <input type="password" placeholder="Your new password" required>
+                            </div>
+                         
+                      
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit">
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+
+            <section class="tab">
+
+                <div class="form-container payment-container payment-info">
+                    <div class="form-tittle">
+                        Payment Info
+                    </div>
+                        <div class="form-content payment-form " style="flex-direction: column;">
+                            <div class="payment-detail payment-info-detail">
+                                <div class="payment-value"></div>
+                                <span>Card holder: </span>
+                                <span>Nguyen Dung Minh Khoa</span>
+                                <i class=" payment-icon fas fa-user"></i>
+                            </div>
+                            <div class="payment-detail">
+                                <span>Card holder: </span>
+                                <input type="text" required placeholder="1234 5431 3131 3131" data-mask="0000 0000 0000 0000">
+                                <i class=" payment-icon far fa-credit-card"></i>
+                            </div>
+                            <div class="payment-detail-group">
+                                <div class="payment-group-item">
+                                    <span>Expire Date: </span>
+                                    <input type="text" data-mask="00 / 00" placeholder="00 / 00">
+                                    <i class=" payment-icon far fa-calendar-alt"></i>
+                                </div>
+                                <div class="payment-group-item">
+                                    <span>CVC:  </span>
+                                    <input type="text" data-mask="000" placeholder="000">
+                                    <i class=" payment-icon fas fa-lock"></i>
+                                </div>
+                            </div>                          
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit">
+                        </div>
+
+                </div>
+
+            </section>
+            <section class="tab">
+
+                <div class="form-container payment-container ">
+                    <div class="form-tittle">
+                        Payment Gateway
+                    </div>
+                    <form action="">
+                        <div class="form-content payment-form " style="flex-direction: column;">
+                            <div class="payment-detail">
+                                <span>Card holder: </span>
+                                <input  type="text" required placeholder="Full name as displayed on card">
+                                <i class=" payment-icon fas fa-user"></i>
+                            </div>
+                            <div class="payment-detail">
+                                <span>Card holder: </span>
+                                <input type="text" required placeholder="1234 5431 3131 3131" data-mask="0000 0000 0000 0000">
+                                <i class=" payment-icon far fa-credit-card"></i>
+                            </div>
+                            <div class="payment-detail-group">
+                                <div class="payment-group-item">
+                                    <span>Expire Date: </span>
+                                    <input type="text" data-mask="00 / 00" placeholder="00 / 00">
+                                    <i class=" payment-icon far fa-calendar-alt"></i>
+                                </div>
+                                <div class="payment-group-item">
+                                    <span>CVC:  </span>
+                                    <input type="text" data-mask="000" placeholder="000">
+                                    <i class=" payment-icon fas fa-lock"></i>
+                                </div>
+                            </div>                          
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit">
+                        </div>
+                    </form>
+
+                </div>
+
+            </section>
+        </div>
+
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+
+</html>

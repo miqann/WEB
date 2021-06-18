@@ -18,6 +18,8 @@
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
+     height: 100vh;
+
  }
  ul,li {
      list-style: none;
@@ -117,17 +119,20 @@ aside .user-side{
 }
 aside .user-pic{
     float: left;
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     padding: 5px;
     border-radius: 100%;
     overflow: hidden;
     margin-right: 10px;
     position: relative;
+    border: 2px solid rgba(0,0,0,0.1);
+    top: -5px;
 }
 aside .user-pic img{
-    width: 100%;
-    height: 100%;
+    width: 80px;
+    height: 80px;
+    
 }
 aside .user-info{
     display: flex;
@@ -279,9 +284,11 @@ aside .search button{
     display: none;
 }
 .main{
-    position: absolute;
+    position: fixed;
     left: 350px;
-    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 .main section{
     width: 100%;
@@ -454,87 +461,284 @@ aside .search button{
 }
 
 
-/*User Info Div*/
-.wrapper
-{
- position: relative;
- padding-right: 15px;
- overflow: hidden;
- display: flex;
- box-shadow: 0 2px 25px rgba(69,90,10,0.2);
- box-sizing: border-box;
- left: 25%;
- margin-top: 50px;
+/*User Info*/
+.user-info-tab{
+    width: 500px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding-left: 35px;
+    font-size: 1em;
+    padding: 0 auto;
+
+    
+}
+.info{
+    display: inline-flex;
+    border-bottom: 1px solid #1C6CED;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.info span{
+    
+    vertical-align: middle;
+    line-height: 23px;
+    color: #797979;
+    
+
+}
+.info h3{
+    margin-right: 20px;
+    margin-left: 20px;
+ 
 }
 
-.wrapper .right{
-    
-    border-radius: 10px;
-    padding: 30px 20px;
+/*Dropbox setting*/
+.drop-box{
+
+    position: absolute;
+    width: 250px;
+    padding: 5px 20px;
     background-color: #fff;
+    right: 20px;
+    box-shadow: 2px 2px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    margin-top: 20px;
+    display: none;
+    top: 325px;
+    transition: 0.5s;
+    left: 58px;
+    border: 1px solid #ccc;
+    
+    
+}
+.drop-box::before{
+    content: "" ;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: -4px;
+    right: 30px;
+    transform: rotate(45deg);
+    border: 1px solid #ccc;
+    z-index: -10;
+    
+}
+.drop-box ul{
+    list-style: none;
+}
+.drop-box ul li a{
+    text-decoration: none;
+}
+.drop-box ul li {
+    padding: 15px 0px;
+    border-top: 1px solid #cccccc;
+    align-items: center;
     display: flex;
+    margin-top: 5px;
+}
+.drop-box ul li:first-child{
+    border: none;
+}
+.drop-box ul li i{
+    font-size: 1.5em;
+    color: #555;
+    opacity: 0.7;
+    transition: 0.5;
+}
+.drop-box ul li i a{
+    margin-left: 10px;
+    color: #555;
+    font-size: 0.7em;
     vertical-align: middle;
     
-}
-.wrapper .right .info-data .data{
-    
-    padding: 15px 0px;
-    border-bottom: 1px solid #575757;
-    display: flex;
-}
-.wrapper .right .info-data .data:last-child{
-    border: none;
-}
-.wrapper .right .info-data .data h4{
-    margin-right: 20px;
     
 }
-.wrapper .right .info-data .data p{
-    color: #919aa3;
-    font-weight: 500;
-    font-size: 0.7em;
-    line-height: 20px;
+.drop-box ul li:hover{
+    opacity: 1;
+    background-color: rgba(0,0,0,0)!important;
+}
+.drop-box ul li:hover a{
+    color: black;
+}
+.drop-box.visible{
+    
+    display: block;
+}
+
+/*Change password*/
+.change-password-form .form-input{
+    width: 100%;
+}
+.change-password-container{
+    max-width: 450px!important;
+    
+}
+.change-password-form{
+    padding-top: 20px!important;
+}
+/*Update info form*/
+.form-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 70px;
+    font-size: 16px;
 
 }
-.wrapper .right .info-data button {
+.form-tittle {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 900;
+    line-height: 1.5em;
+
+}
+.form-tittle::before{
+    content: "";
+    height: 3px;
+    width: 140px;
+    background: var(--b);
+    top:65px;
+    position: absolute;
+}
+.form-content {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-input{
+    width: calc(100%/2);
+    padding:0 15px;
+    margin-bottom: 15px;
+}
+.form-input span{
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+.form-input input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 1em;
+}
+.form-input input:focus,.form-input input:valid,
+.payment-detail input:focus,.payment-detail input:valid,
+.payment-group-item input:focus, .payment-group-item input:valid{
+    border-color:#1C6CED ;
+    border-bottom-width: 2px;
+}
+.checkbox {
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.checkbox-tittle {
+    display: inline-flex;
+    font-size: 1.2em;
+    padding-left: 5px;
+}
+.option-list{
+    padding: 10px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.option-list label {
+    cursor: pointer;
+    align-items: center;
+    display: inline-flex;
+}
+.dot {
+    content: "";
+    width:1em;
+    height: 1em;
+    background: #ccc;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+#radio-1:checked~ .option-list .radio-1,
+#radio-2:checked~ .option-list .radio-2,
+#radio-3:checked~ .option-list .radio-3 {
+    background-color: #1C6CED;
+}
+.checkbox input {
+    display: none;
+}
+.form-submit {
+    text-align: center;
+    align-items: center;
+}
+.form-submit input {
+    width: 50%;
+    font-size: 1.4em;
     text-align: center;
     padding: 10px;
-    color: #575757;
-    border-radius: 10px;
     border: none;
-    margin-top:20px;
-    margin-left: 150px;
+    border-radius: 15px;
+    background: var(--b);
+    opacity: 0.7;
+    transition: all 300ms ease;
     cursor: pointer;
-    font-family: "Roboto",sans-serif;
-    text-transform: uppercase;
-    background-color: #ff5252;
-    color: #fff;
-    opacity: 0.8;
-    
+    font-weight: bolder;
 }
-.wrapper .right .info-data button:hover{
+.form-submit input:hover{
     opacity: 1;
 }
 
-
-/*User Update Info*/
-
-.update .right .info-data .data input {
-    color: #919aa3;
-    font-weight: 500;
-    font-size: 0.7em;
-    line-height: 20px;
-    border: none;
-    width: 100%;
-    display: inline;
+/*Payment gateway*/
+.payment-container {
+    max-width: 400px!important;
+}
+.payment-form {
+    padding:20px 30px 20px;
+}
+.payment-detail{
     position: relative;
-    
 }
-.update .right .info-data .data input:hover{
-    cursor: pointer;
-    border: 1px solid #919aa3;
+.payment-detail span, .payment-group-item span{
+    display: block;
+    margin-bottom: 5px;
 }
-.update .right .info-data .data h4{
+.payment-detail input, .payment-group-item input {
     width: 100%;
- 
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 1em;
+    padding-left: 35px;
+    margin-bottom: 20px;
+}
+.payment-detail-group{
+    display: flex;
+    justify-content: space-between;
+}
+.payment-group-item {
+    width: 48%;
+    position: relative;
+}
+.payment-icon {
+    
+    position: absolute;
+    left: 10px;
+    bottom: 33px;
+    
 }

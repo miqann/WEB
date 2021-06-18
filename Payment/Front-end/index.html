@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css ">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+
+    <!--captcha box-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div class="container pt-5">
+        <div class="card">
+            <ul class="nav nav-pills mb-3">
+                <li>
+                    <a href="#nav-tab-card" class="nav-link active" data-toggle="pill">
+                        <i class="fa fa-credit-card"><span>Creadit card</span></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#nav-tab-paypal" class="nav-link" data-toggle="pill">
+                        <i class="fab fa-paypal"><span>Paypal</span></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#nav-tab-banking" class="nav-link" data-toggle="pill">
+                        <i class="fa fa-university"><span>Banking</span></i>
+                    </a>
+                </li>
+            </ul>
+
+
+            <div class="tab-content p-3">
+                <!--Creadit card form-->
+                <div class="tab-pane fade show active" id="nav-tab-card">
+                    <form action="">
+                        <div class="form-content payment-form  creadit-form" style="flex-direction: column;">
+                            <div class="payment-detail">
+                                <span>Card holder: </span>
+                                <input type="text" required placeholder="Full name as displayed on card">
+                                <i class=" payment-icon fas fa-user"></i>
+                            </div>
+                            <div class="payment-detail" id="card-container">
+                                <span>Card number: </span>
+                                <input type="text" required placeholder="1234 5431 3131 3131" id="card"
+                                    data-mask="0000 0000 0000 0000">
+                                <i class=" payment-icon far fa-credit-card"></i>
+                                <div id="logo"></div>
+                            </div>
+                            <div class="payment-detail-group">
+                                <div class="payment-group-item">
+                                    <span>Expire Date: </span>
+                                    <input type="text" data-mask="00 / 00" placeholder="00 / 00">
+                                    <i class=" payment-icon far fa-calendar-alt"></i>
+                                </div>
+                                <div class="payment-group-item">
+                                    <span>CVC: </span>
+                                    <input type="text" data-mask="000" placeholder="000">
+                                    <i class=" payment-icon fas fa-lock"></i>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary local-button">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <!--Paypal form-->
+
+                <div class="tab-pane text-center" id="nav-tab-paypal">
+                    <div class="paypal-tittle">
+                        <div class="paypal-img">
+                            <img src="./1024px-PayPal_logo.png" alt="">
+                        </div>`
+                        <p class="">Get Started</p>
+                    </div>
+                    <div class="form-content payment-form paypal-form">
+                        <form action="" class="payment-detail paypal-detail">
+                            <span>Enter your email to login or signup</span>
+                            <input type="text" placeholder="Email address">
+                            <button type="submit" class="btn btn-primary local-button">Next
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!--Banking form-->
+                <div class="tab-pane text-center" id="nav-tab-banking">
+                    <div class="paypal-tittle">
+                        <div class="paypal-img">
+                            <img src="./1024px-PayPal_logo.png" alt="">
+                        </div>
+                        <p class="">Get select your bank</p>
+                    </div>
+                    <form action="">
+                        <div class="form-content payment-form creadit-form banking-form"
+                            style="flex-direction: column;">
+                            <select name="" id="bank-name">
+                                <option value="">Your bank</option>
+                                <option value="">Techcombank</option>
+                                <option value="">TPBank</option>
+                                <option value="">VPBank</option>
+                            </select>
+                            <div class="payment-detail">
+                                <input type="text" required placeholder="User account">
+                                <i class=" payment-icon fas fa-user"></i>
+                            </div>
+                            <div class="payment-detail" id="card-container">
+                                <input type="text" required placeholder="password">
+                                <i class=" payment-icon far fa-credit-card"></i>
+                                <div id="logo"></div>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LcITR0bAAAAACdvjPCZmixn2Yybm2fv1uTo0zBo"></div>
+                            <br />
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary local-button">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="tab-pane text-center" id="nav-tab-banking-login">
+                    <div class="paypal-tittle">
+                        <div class="paypal-img">
+                            <img src="./1024px-PayPal_logo.png" alt="">
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Datmask-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="card-validator.js"></script>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+</body>
+
+</html>

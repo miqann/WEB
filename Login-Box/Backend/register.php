@@ -11,22 +11,22 @@ if (isset($_SESSION['userId'])) {
 }
 
 if (isset($_POST['submitSign'])) {
-	$uname = $_POST['userId'];
-	$uemail = $_POST['email'];
-	$upass = md5($_POST['password']);
-	$cupass = md5($_POST['cpassword']);
+	$username = $_POST['userId'];
+	$email = $_POST['email'];
+	$password = md5($_POST['password']);
+	$cpassword = md5($_POST['cpassword']);
 
-	if ($upass == $cupass) {
-		$sql = "SELECT * FROM registerform WHERE Email='$uemail'";
+	if ($password == $cpassword) {
+		$sql = "SELECT * FROM registerform WHERE email='$email'";
 		$result = mysqli_query($conn, $sql);
 		if (!$result->num_rows > 0) {
 			$sql = "INSERT INTO registerform (User, Email, Pass)
-					VALUES ('$uname', '$uemail', '$upass')";
+					VALUES ('$username', '$email', '$password')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
 				echo "<script>alert('Wow! User Registration Completed.')</script>";
-				$uname = "";
-				$uemail = "";
+				$username = "";
+				$email = "";
 				$_POST['password'] = "";
 				$_POST['cpassword'] = "";
 			} else {

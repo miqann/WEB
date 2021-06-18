@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <!-- <div id="overlay"></div>
+    <div id="spinner"></div> -->
+
+    <div class="wrapper-header" id="wrapper-header" >
+        <div class="nav-bar">
+            <div class="row set-width g-0">
+                <div class="col-md-5 col-8 ">
+                    <div class="left-nav">
+                        <div class="logo">
+                            <a href="./"><img src="./IMG/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-5 offset-md-2 padding-right-nav ">
+                    <div class="right-nav d-none d-sm-block">
+                        <div class="menu">
+                            <div class="menu-inline ">
+                                <button type="button" class="btn btn-trang bottom">
+                                    <a class="moremenu" onmouseover="showmenu('divLiCat');" 
+                onmouseout="setTimeToHide()" href="#">CATEGORIES</a>
+
+        <ul id="ul_Rep">
+            <li>
+                <div id="divLiCat" onmouseover="ReSetTimer()" onmouseout="setTimeToHide()" style="display:none;">
+
+                    <a href="#" title="Cascading Style Sheets">Cascading Style Sheets</a>
+                    <a href="#" title="Active Server Pages">Active Server Pages</a>
+                    <a href="#" title="Oracle">Oracle</a>
+                    <a href="#" title="Sql Server">Sql Server</a>
+                    <a href="#" title="Desktop Applications">Desktop Applications</a>
+                    <a href="#" title="Subscribe">Subscribe</a>
+
+                </div>
+            </li>
+        </ul>
+                                </button>
+                                <button type="button" class="btn btn-trang bottom"><a class="" href="goole.com">services</a></button>
+                                <button type="button" class="btn btn-trang bottom"><a class="" href="#">about us</a></button>
+                                <button type="button" class="btn btn-trang bottom"><a class="" href="#">contact us</a></button>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="navbar__toggle" id="mobile-menu">
+                        <span class="bar"></span> <span class="bar"></span>
+                        <span class="bar"></span>
+                      </div>
+                    
+
+                </div>
+              </div>
+              <div class="row navbar__menu g-0">
+                  <div class="col-12 d-lg-none g-0">
+                    <button type="button" class="btn btn-trang bottom"><a class="" href="goole.com">services</a></button>
+
+                  </div>
+                  <div class="col-12 d-lg-none g-0">
+                    <button type="button" class="btn btn-trang bottom"><a class="" href="#">about us</a></button>
+                  </div>
+                  <div class="col-12 d-lg-none g-0">
+                    <button type="button" class="btn btn-trang bottom"><a class="" href="#">contact us</a></button>
+                </div>
+
+              </div>
+
+        </div>
+        <div class="contact-and-request">
+            <div class="container">
+                <div class="row padding-re-cont">
+                    <div class="col-lg-7 col-12 padding-contact">
+                        <div class="quote-contact-one">
+                            <h1 class="quote-top">Tamworth Commercial Cleaning and Garden Maintenance</h1>
+                        </div>
+                        <div class="quote-contact-two">
+                            Professional services to keep your business spotless and expertly maintained.
+
+                        </div>
+                        <div class="btn btn-call no-des rounded-0">
+                            <a class="no-des" href="#">Call 0412 333 815 </a>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-5 col-12 padding-request">
+                        <div class="form-wrapper">
+                            <div class="form-heading">
+                                <div class="heading-form">
+                                    Request a Quote
+                                </div>
+                                <div class="form-body">
+                                    <form action="display.html" method="GET" role="form">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control-input" id="cemail" required>
+                                           <!-- <label class="label-control" for="cemail">Email</label> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="phone" class="form-control-input" id="cphone" required>
+                                            <!-- <label class="label-control" for="cemail">Email</label> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control-input" id="cemail" required>
+                                            <!-- <label class="label-control" for="cemail">Email</label> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="company" class="form-control-input" id="ccompany" required>
+                                            <!-- <label class="label-control" for="cemail">Email</label> -->
+                                        </div>
+                                        <div class="form-button">
+                                            <div class="btn btn-form"><button class="submit-register" type="submit" onclick="SubmitFunction()">Request A Quote Now</button></div>
+                                            
+                                        </div>
+                                        
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+                
+
+                
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+    <div class="letus-wrapper">
+        <div class="row container mg-0">
+            <div class="col-xl-6 mg-auto">
+                <h1>Exceptional Commercial &amp; Janitorial Cleaning Services Customized to
+                    Your Needs</h1>
+               <p>ServiceMaster Clean is committed to providing a clean and healthy environment
+                    for your customers and your employees. For more than 65 years, we have
+                    consistently gone above and beyond the cleaning expectations of our clients.</p>
+               <p>Our cleaning experts deliver the highest quality of clean you can always
+                    count on. Let us help you with all of your cleaning and disinfecting responsibilities.</p>
+               <div class="flex-d">
+                   <div style="width:30%;">
+                       <img class="media-left" alt="AHE, Association for the Health Care Environment Corporate Champion" src="./IMG/ahe_corporatechampions_logo.2011171144248.png">
+                   </div>
+                   <div class="media-right">
+                        <div>
+                        We are Committed to Cleaning Excellence
+                        </div>
+                        <div class="btn btn-success">
+                            LET US HELP YOU
+
+                        </div>
+
+                   </div>
+                   
+                   
+               </div>
+
+            </div>
+            <div class="col-xl-6">
+                <img class="letus-right-content" src="./IMG/wiping-lab-table.2104211510362.webp" alt="">
+
+            </div>
+
+        </div>
+       
+
+    </div>
+   
+    <div class="wrapper-value">
+        <div class="row justify-content-center resize-width">
+            <div class="col-12 col-xl-3 text-center padding-value">
+                <span class="border-right">65+ YEARS OF CLEANING EXPERIENCE</span>
+            </div>
+            <div class="col-12 col-xl-3 text-center vertical-align padding-value ">
+                <span class="border-right">OVER 450 LOCATIONS NATIONWIDE</span>
+            </div>
+            <div class="col-12 col-xl-3 text-center vertical-align border-add">
+                PROPRIETARY CLEANING SYSTEMS & TECHNOLOGYS
+        
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <div class="service-wrapper">
+        <div class="container">
+            <div class="intro-service">
+                <h2>Choose The Service Package
+                    That Suits Your Needs</h2>
+
+            </div>
+            <div class="row container justify-content-center mg-0">
+                <div class="col-xl-3 col-12">
+                    <a href="">
+                        <div class="service-one">
+                            <img src="./IMG/download.jpeg"  alt="">
+                            <div class="absolute-content">Commercial Cleaning</div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="col-xl-3 col-12">
+                    <a href="">
+                        <div class="service-two">
+                            <img src="./IMG/download.jpeg"  alt="">
+                            <div class="absolute-content">Residential Cleaning</div>
+                        </div>
+                    </a>
+                    
+
+                </div>
+
+            </div>
+            <div class="row padding-adjust">
+                <div class="col-xl-12 text-center">
+                    <div class="btn btn-success">
+                        View All Services
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="swipe-container">
+        <div class="swiper-body resize-height ">
+            <div class="swiper-container mySwiper-two">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide resize-img"><img class="img-sponsor-one" src="./IMG/-1610482841.png" alt=""></div>
+                    <div class="swiper-slide resize-img"><img class="img-sponsor-two" src="./IMG/-1610482857.png" alt=""></div>
+                    <div class="swiper-slide resize-img"><img class="img-sponsor-three" src="./IMG/-1610482878.png" alt=""></div>
+                    <div class="swiper-slide resize-img"><img class="img-sponsor-four" src="./IMG/-1611533900.png" alt=""></div>
+                    <div class="swiper-slide resize-img"><img class="img-sponsor-five" src="./IMG/-1617228135.png" alt=""></div>
+                    <div class="swiper-slide resize-img"><img class="img-sponsor-one" src="./IMG/-1610482841.png" alt=""></div>
+                    <div class="swiper-slide resize-img"><img class="img-sponsor-two" src="./IMG/-1610482857.png" alt=""></div>
+                    <div class="swiper-slide resize-img"><img class="img-sponsor-three" src="./IMG/-1610482878.png" alt=""></div>
+                    <div class="swiper-slide resize-img"><img class="img-sponsor-four" src="./IMG/-1611533900.png" alt=""></div>
+                    <div class="swiper-slide resize-img"><img class="img-sponsor-five" src="./IMG/-1617228135.png" alt=""></div>
+          
+                </div>
+                
+                
+            </div>
+    
+        </div>
+    
+    </div>
+    
+        <!-- <div class="container">
+            <div class="resize-container">
+                <div class="row ">
+                    <div class="col-xl-3 col-3 text-center ">
+                        <div class="padding-four">
+                                <div class="first-d">65+ YEARS OF CLEANING EXPERIENCE</div>
+                                <div class="second-d">Cleaning Standards Set in Place to Follow CDC Guidelines </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-3 text-center ">
+                        <div class="padding-four">
+                            <div class="first-d">65+ YEARS OF CLEANING EXPERIENCE</div>
+                            <div class="second-d">Cleaning Standards Set in Place to Follow CDC Guidelines </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-3 text-center ">
+                        <div class="padding-four">
+                            <div class="first-d">65+ YEARS OF CLEANING EXPERIENCE</div>
+                            <div class="second-d">Cleaning Standards Set in Place to Follow CDC Guidelines </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-3 text-center ">
+                        <div class="padding-four">
+                            <div class="first-d">65+ YEARS OF CLEANING EXPERIENCE</div>
+                            <div class="second-d">Cleaning Standards Set in Place to Follow CDC Guidelines </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+         
+   
+    <div class="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Our Team Of Consultants</h2>
+                    <p class="p-heading">We're only as strong and as knowledgeable as our team. So here are the men and women which help customers meet goals and grow companies</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="./IMG/images.jpeg" alt="alternative">
+                        </div> <!-- end of image-wrapper -->
+                        <p class="p-large">tungdzai</p>
+                        <p class="job-title">General Manager</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="./IMG/images.jpeg" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large">tungdzai</p>
+                        <p class="job-title">Business Developer</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="./IMG/images.jpeg" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large">tungdzai</p>
+                        <p class="job-title">Online Marketer</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-fluid" src="./IMG/images.jpeg" alt="alternative">
+                        </div> <!-- end of image wrapper -->
+                        <p class="p-large">tungdzai</p>
+                        <p class="job-title">Community Manager</p>
+                        <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <span class="hexagon"></span>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                    </div> <!-- end of team-member -->
+                    <!-- end of team member -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div>
+    <div id="contact" class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <div class="section-title">CONTACT</div>
+                        <h2>Get In Touch Using The Form</h2>
+                        <p>You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="address"><i class="fas fa-map-marker-alt"></i>22nd Innovative Street, San Francisco, CA 94043, US</li>
+                            <li><i class="fas fa-phone"></i><a href="tel:003024630820">+81 720 22 126</a></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:003024630820">+81 720 22 128</a></li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:office@aria.com">office@aria.com</a></li>
+                        </ul>
+                        
+                        
+
+                        
+                        
+                    </div> <!-- end of text-container -->
+                </div>
+                <div class="col-lg-6">
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Name</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Your message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="coppy-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="container flex-d justify-content-center border-cpr">
+            <i class="far fa-copyright color" style="font-size: 20px;"></i>
+       <div class="cpr-content">Copyright 2020 All Rights Reserved. By TungDzai</div>
+
+        </div>
+
+    </div>
+   
+        
+        <button id="btn-scrolltop">
+            <i class="material-icons">arrow_upward</i>
+            
+        </button>
+        
+
+        </div>
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+
+    </div>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <script src="firstpage.js"></script> 
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        
+
+</body>
+</html>
