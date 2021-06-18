@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and SignUp form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
 
 </head>
 
@@ -27,10 +28,13 @@
                     <button type="button" class="loginbox-toggle-btn" onclick="signup()">SIGN UP</button> -->
 
             </div>
-            <div class="loginbox-social-icon">
+            <div class="loginbox-social-icon back-signup">
                 <img src="img/facebook-social-media-fb-logo-square-44659.webp">
                 <img src="img/38-instagram-3-512.webp" alt="">
                 <img src="img/img_2220.png" alt="">
+                <div class="back">
+                    <a href="/Home Page/index.html"><i class="fas fa-undo"></i> <span>Go Back To Home Page</span></a>
+                </div>
             </div>
             <form action="register.php" method="POST" id="loginbox-signup" class="loginbox-input-group-signup" style="left: 50px;">
                 <input class="loginbox-input-field" type="text" name="userId" id="loginbox-userId"

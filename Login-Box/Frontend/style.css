@@ -69,7 +69,7 @@
     transition: .5s;
 }
 .loginbox-social-icon{
-    margin: 350px auto;
+    margin: 320px auto;
     text-align: center;
 }
 .loginbox-social-icon img{
@@ -80,13 +80,13 @@
     border-radius: 50%;
 }
 .loginbox-input-group-login{
-    top: 125px;
+    top: 110px;
     position: absolute;
     width: 280px;
     transition: .5s;
 }
 .loginbox-input-group-signup{
-    top: 100px;
+    top: 90px;
     position: absolute;
     width: 280px;
     transition: .5s;
@@ -162,3 +162,16 @@
     font-size: 1em;
 }
 
+.back{
+    padding-top: 15px;
+}
+.back a{
+    text-decoration: none;
+    color: black;
+}
+.back a:hover {
+    color:#7AC943;
+}
+.back-signup {
+    margin: 330px auto!important;
+}
