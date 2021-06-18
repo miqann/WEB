@@ -13,6 +13,7 @@ body{
 .container{
     max-width: 450px!important;
     margin: auto 0;
+    padding-top: 7.5rem!important;
     
     
 }
