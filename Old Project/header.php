@@ -33,7 +33,7 @@
             <?php
               if(isset($_SESSION["logEmail"])) {
                 echo " <li class='nav-item'>
-                <a class='nav-link' href='myprofile.php'>MY PROFILE</a>
+                <a class='nav-link' href='myprofile.php'>  PROFILE</a>
               </li>" ;
                 echo " <li class='nav-item'>
                 <a class='nav-link' href='include/logout.inc.php'>LOG OUT</a>  </li> ";
