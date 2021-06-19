@@ -7,26 +7,26 @@ error_reporting(0);
 session_start();
 
 if (isset($_SESSION['userId'])) {
-    header("Location: index.php");
+    header("Location: Login.php");
 }
 
 if (isset($_POST['submitSign'])) {
-	$username = $_POST['userId'];
-	$email = $_POST['email'];
-	$password = md5($_POST['password']);
-	$cpassword = md5($_POST['cpassword']);
+	$uname = $_POST['userId'];
+	$uemail = $_POST['email'];
+	$upass = md5($_POST['password']);
+	$cupass = md5($_POST['cpassword']);
 
-	if ($password == $cpassword) {
-		$sql = "SELECT * FROM registerform WHERE email='$email'";
+	if ($upass == $cupass) {
+		$sql = "SELECT * FROM registerform WHERE Email='$uemail'";
 		$result = mysqli_query($conn, $sql);
 		if (!$result->num_rows > 0) {
 			$sql = "INSERT INTO registerform (User, Email, Pass)
-					VALUES ('$username', '$email', '$password')";
+					VALUES ('$uname', '$uemail', '$upass')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
 				echo "<script>alert('Wow! User Registration Completed.')</script>";
-				$username = "";
-				$email = "";
+				$uname = "";
+				$uemail = "";
 				$_POST['password'] = "";
 				$_POST['cpassword'] = "";
 			} else {

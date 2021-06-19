@@ -8,6 +8,7 @@
         header("Location: Login.php");
     }
 ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 
