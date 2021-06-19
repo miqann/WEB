@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['userId'])) {
-    header("Location: index.php");
+    header("Location: Login.php");
 }
 
 ?>
@@ -16,7 +16,7 @@ if (!isset($_SESSION['userId'])) {
     <title>Welcome</title>
 </head>
 <body>
-    <?php echo "<h1>Welcome " . $_SESSION['username'] . "</h1>"; ?>
+    <?php echo "<h1>Welcome " . $_SESSION['userId'] . "</h1>"; ?>
     <a href="logout.php">Logout</a>
 </body>
 </html>

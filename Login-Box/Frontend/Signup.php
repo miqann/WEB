@@ -1,5 +1,13 @@
 <?php
     include 'Backend/register.php';
+    error_reporting(0);
+
+    session_start();
+
+    if (isset($_SESSION['userId'])) {
+        header("Location: Login.php");
+    }
+?>
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +28,7 @@
                 <div id="loginbox-button" style="left: 110px;">
                 </div>
                 <div class="loginbox-loginbutton">
-                    <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='index.php'">LOGIN</button>
+                    <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='Login.php'">LOGIN</button>
                 </div>
                 <div class="loginbox-signupbutton">
                     <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='Signup.php'">SIGN UP</button>

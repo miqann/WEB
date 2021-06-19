@@ -1,5 +1,13 @@
 <?php
     include 'Backend/login.php';
+    session_start();
+    error_reporting(0);
+
+    if (isset($_SESSION['userId'])) {
+        header("Location: welcome.php");
+}
+?>
+
 ?>
 
 <!DOCTYPE html>
