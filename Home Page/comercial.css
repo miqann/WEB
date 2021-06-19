@@ -1,0 +1,78 @@
+.title-cowrapper{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.title-h1{
+    text-align: center;
+    color: #00A0A8!important;
+    font-size: 2em!important;
+    font-family: Futura , sans-serif;
+    font-weight: 600;
+}
+.under-title{
+    text-align: center;
+    font-family: Futura , sans-serif;
+
+}
+.onepage-service{
+    background: #7AC943;
+}
+.title-h2{
+    text-align: center;
+    color: #FFFF!important;
+    font-size: 2em!important;
+    font-family: Futura , sans-serif;
+    font-weight: 600;
+}
+.onepage-service p{
+    font-family: Futura , sans-serif;
+    color: #FFFF;
+
+}
+.onepage-service ul{
+    font-family: Futura , sans-serif;
+    color: #FFFF;
+}
+.padding-onepage{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.twopage-service{
+    font-family: Futura , sans-serif;
+
+}
+.padding-twopage{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.title-twopage{
+    color: #00A0A8!important;
+    font-size: 3em!important;
+    font-family: Futura , sans-serif;
+    font-weight: 600;
+    
+}
+.padding-twp{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.commercial-offer {
+    background-color: #f7f7f7;
+    color:#7AC943 ;
+    font-size: 2em!important;
+    font-family: Futura , sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.offer{
+    line-height: 1.2em;
+}
+.no-des{
+    margin-left:0 !important;
+}
+.form-2 .section-title {
+    margin-bottom: 0.5rem;
+    font-size: 2em;
+}

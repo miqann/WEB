@@ -46,27 +46,23 @@
                     <div class="right-nav d-none d-sm-block">
                         <div class="menu">
                             <div class="menu-inline ">
-                                <button type="button" class="btn btn-trang bottom">
-                                    <a class="moremenu" onmouseover="showmenu('divLiCat');" 
-                onmouseout="setTimeToHide()" href="#">Home</a>
+                                <button type="button" class="btn btn-trang bottom"><a class="" href="./index.html">Home</a></button>
+                                <button type="button" class="btn btn-trang bottom" id="ser-nav" onmouseover="showmenu('divLiCat');" 
+                                onmouseout="setTimeToHide()" href="#service">Service<i class="fas fa-chevron-down" style="padding-left: 5px;"></i><ul id="ul_Rep">
+                                    <li>
+                                        <div id="divLiCat" onmouseover="ReSetTimer()" onmouseout="setTimeToHide()" style="display:none;">
+                        
+                                            <a href="./comercial.html" title="Commercial Cleaning">Commercial Cleaning</a>
+                                            <a href="./residential.html" title="Residential Cleaning">Residential Cleaning</a>
+                                            
+                        
+                                        </div>
+                                    </li>
+                                </ul></button>
 
-        <ul id="ul_Rep">
-            <li>
-                <div id="divLiCat" onmouseover="ReSetTimer()" onmouseout="setTimeToHide()" style="display:none;">
-
-                    <a href="#" title="Cascading Style Sheets">Cascading Style Sheets</a>
-                    <a href="#" title="Active Server Pages">Active Server Pages</a>
-                    <a href="#" title="Oracle">Oracle</a>
-                    <a href="#" title="Sql Server">Sql Server</a>
-                    <a href="#" title="Desktop Applications">Desktop Applications</a>
-                    <a href="#" title="Subscribe">Subscribe</a>
-
-                </div>
-            </li>
-        </ul>
-                                </button>
-                                <button type="button" class="btn btn-trang bottom"><a class="" href="#service">services</a></button>
-                                <button type="button" class="btn btn-trang bottom"><a class="" href="#aboutus">about us</a></button>
+        
+                              
+                                <button type="button" class="btn btn-trang bottom"><a class="" href="./index.html#aboutus">about us</a></button>
                                 <button type="button" class="btn btn-trang bottom"><a class="" href="#contact">contact us</a></button>
                                 <button type="button" class="btn btn-trang bottom"><a class="" href="../Login-Box/Frontend/index.html">Login</a></button>
                                 <button type="button" class="btn btn-trang bottom"><a class="" href="../Login-Box/Frontend/Signup.html">Signup</a></button>
@@ -126,19 +122,19 @@
                                 <div class="form-body">
                                     <form action="display.html" method="GET" role="form">
                                         <div class="form-group">
-                                            <input type="email" class="form-control-input" id="cemail" required>
+                                            <input type="email" class="form-control-input" id="cname" placeholder="Your name:" required>
                                            <!-- <label class="label-control" for="cemail">Email</label> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="phone" class="form-control-input" id="cphone" required>
+                                            <input type="phone" class="form-control-input" id="cphone" placeholder="Your phone:" required>
                                             <!-- <label class="label-control" for="cemail">Email</label> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control-input" id="cemail" required>
+                                            <input type="email" class="form-control-input" id="cemail" placeholder="Your email:" required>
                                             <!-- <label class="label-control" for="cemail">Email</label> -->
                                         </div>
                                         <div class="form-button">
-                                            <div class="btn btn-form"><button class="submit-register" type="submit" onclick="SubmitFunction()">Request A Quote Now</button></div>
+                                            <div class="btn btn-form"><button class="submit-register"  type="submit" onclick="SubmitFunction()">Request A Quote Now</button></div>
                                             
                                         </div>
                                         
@@ -219,7 +215,7 @@
     </div>
     
     
-    <div class="service-wrapper" id="">
+    <div class="service-wrapper" id="service">
         <div class="container">
             <div class="intro-service">
                 <h2>Choose The Service Package
@@ -228,7 +224,7 @@
             </div>
             <div class="row container justify-content-center mg-0">
                 <div class="col-xl-3 col-12">
-                    <a href="">
+                    <a href="./comercial.html">
                         <div class="service-one">
                             <img src="./IMG/download.jpeg"  alt="">
                             <div class="absolute-content">Commercial Cleaning</div>
@@ -237,7 +233,7 @@
                     
                 </div>
                 <div class="col-xl-3 col-12">
-                    <a href="">
+                    <a href="./residential.html">
                         <div class="service-two">
                             <img src="./IMG/download.jpeg"  alt="">
                             <div class="absolute-content">Residential Cleaning</div>
@@ -438,7 +434,7 @@
                         <h2>Get In Touch Using The Form</h2>
                         <p>You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</p>
                         <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>22nd Innovative Street, San Francisco, CA 94043, US</li>
+                            <li class="address"><i class="fas fa-map-marker-alt"></i> Ho Chi Minh City, Vietnam</li>
                             <li><i class="fas fa-phone"></i><a href="tel:003024630820">+81 720 22 126</a></li>
                             <li><i class="fas fa-phone"></i><a href="tel:003024630820">+81 720 22 128</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:office@aria.com">office@aria.com</a></li>
@@ -455,18 +451,18 @@
                     <!-- Contact Form -->
                     <form id="contactForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                            <input type="text" class="form-control-input" id="cname" placeholder="Name"required >
+                            <label class="label-control" for="cname"></label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
+                            <input type="email" class="form-control-input" id="cemail" placeholder="Email" required>
+                            <label class="label-control" for="cemail"></label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
+                            <textarea class="form-control-textarea" id="cmessage" placeholder="Message" required></textarea>
+                            <label class="label-control" for="cmessage"></label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group checkbox">
@@ -500,13 +496,11 @@
                     </ul>
                 </div>
             </div>
-        <div class="container flex-d justify-content-center border-cpr">
-            <i class="far fa-copyright color" style="font-size: 20px;"></i>
-       <div class="cpr-content">Copyright 2020 All Rights Reserved. By TungDzai</div>
-
+            <div class="container flex-d justify-content-center border-cpr">
+                <i class="far fa-copyright color" style="font-size: 20px;"></i>
+                <div class="cpr-content">Copyright 2020 All Rights Reserved. By TungDzai</div>
+            </div>
         </div>
-
-    </div>
    
         
         <button id="btn-scrolltop">

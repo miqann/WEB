@@ -1,3 +1,13 @@
+<?php
+    include 'Backend/register.php';
+    error_reporting(0);
+
+    session_start();
+
+    if (isset($_SESSION['userId'])) {
+        header("Location: Login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,10 +28,10 @@
                 <div id="loginbox-button" style="left: 110px;">
                 </div>
                 <div class="loginbox-loginbutton">
-                    <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='index.html'">LOGIN</button>
+                    <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='Login.php'">LOGIN</button>
                 </div>
                 <div class="loginbox-signupbutton">
-                    <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='Signup.html'">SIGN UP</button>
+                    <button type="button" class="loginbox-toggle-btn" onclick="window.location.href='Signup.php'">SIGN UP</button>
                 </div>
                 <!--
                     <button type="button" class="loginbox-toggle-btn" onclick="login()">LOGIN</button>
@@ -36,15 +46,15 @@
                     <a href="/Home Page/index.html"><i class="fas fa-undo"></i> <span>Go Back To Home Page</span></a>
                 </div>
             </div>
-            <form action="register.php" method="POST" id="loginbox-signup" class="loginbox-input-group-signup" style="left: 50px;">
-                <input class="loginbox-input-field" type="text" name="userId" id="loginbox-userId"
+            <form action="Backend/register.php" method="POST" id="loginbox-signup" class="loginbox-input-group-signup" style="left: 50px;">
+                <input class="loginbox-input-field" type="text" value="<?php echo $uname ?>" name="userId" id="loginbox-userId"
                     placeholder="User ID " required>
-                <input class="loginbox-input-field" type="email" name="email" id="loginbox-email" placeholder="Email"
+                <input class="loginbox-input-field" type="email" value="<?php echo $uemail ?>" name="email" id="loginbox-email" placeholder="Email"
                     required>
 
-                <input class="loginbox-input-field" type="password" name="password" id="" placeholder="Password"
+                <input class="loginbox-input-field" type="password" value="<?php echo $_POST['password']; ?>" name="password" id="" placeholder="Password"
                     required>
-                <input class="loginbox-input-field" type="password" name="cpassword" id=""
+                <input class="loginbox-input-field" type="password" value="<?php echo $_POST['cpassword']; ?>" name="cpassword" id=""
                     placeholder="Enter your password again" required>
                 <input type="checkbox" class="loginbox-check-box"> <span>I agree to term & conditions</span>
                 <button name="submitSign" type="submit" class="loginbox-submit-btn">Sign Up</button>
