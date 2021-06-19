@@ -6,8 +6,8 @@ body, html { overflow-x:hidden; }
   min-height: 40px;
   min-width: 100px;
   display:block ;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  /*margin-top: 20px;
+  padding-bottom: 20px;*/
 }
 @media (max-width: 991px){
   .border-add{
@@ -261,7 +261,7 @@ button.bottom:hover:before {
 
 .quote-contact-one h1{
   font-size: 65px;
-  color: #157347;
+  color: #FFA300;
   font-weight: bolder!important;
   line-height: 1.2em!important;
   
@@ -274,7 +274,7 @@ button.bottom:hover:before {
 
 .quote-contact-two{
   font-size: 20px;
-  color: #157347;
+  color: #FFA300;
   text-align: center;
   
   /* transform: translateY(-200px);
@@ -1100,7 +1100,7 @@ background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, F
 
 
 .form-2 {
-	padding-top: 10.625rem;
+	padding-top: 4rem;
 	padding-bottom: 5.625rem;background: #ECE9E6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
